@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "cypress open"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -27,6 +28,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
+    "cypress": "^14.3.2",
     "eslint": "^9.26.0",
     "eslint-config-next": "15.3.1",
     "eslint-config-prettier": "^10.1.2",
@@ -37,10 +39,10 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/*.{ts,tsx}": [
       "eslint --max-warnings 0 .",
       "prettier --write --ignore-unknown"
     ],
-    "*.{js,css,md}": "prettier --write"
+    "src/*.{js,css,md}": "prettier --write"
   }
 }
