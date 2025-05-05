@@ -39,10 +39,10 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "src/*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "eslint --max-warnings 0 .",
       "prettier --write --ignore-unknown"
     ],
-    "src/*.{js,css,md}": "prettier --write"
+    "src/**/*.{js,css,md}": "prettier --write"
   }
 }
